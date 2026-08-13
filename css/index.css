@@ -1,0 +1,117 @@
+
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 17;
+    margin: 0;
+    background-color: #151d30;
+    color: #F1F5F9;
+}
+
+#Experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Experience li {
+    background-color: darkcyan;
+    padding: 8px 16px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.Experience-Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Experience-Header h3 {
+    margin: 0;
+}
+
+#Experience p {
+    font-family: Nunito, sans-serif;
+    margin-top: 5px;
+}
+
+#Connect {
+    margin-top: 32px;
+    text-align: center;
+}
+
+#Connect ul {
+    display:flex;
+    gap: 32px;
+    justify-content: center;
+    padding: 0;
+}
+
+#Connect li a {
+    font-family: Nunito, sans-serif;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+#Connect img {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: orange;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: lawngreen;
+    padding: 4px 0;
+}
+
+section {
+    margin: 24px 0;
+    padding: 0 12px;
+}
+
+nav {
+    background-color: lightblue;
+    padding: 5px;
+    margin-left: 8px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-family: Nunito, sans-serif;
+    color: black;
+    margin-right: 48px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+footer {
+    background-color: #0f1424;
+    font-family: Nunito, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 60px;
+    padding: 5px;
+}
