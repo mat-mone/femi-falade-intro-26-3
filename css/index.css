@@ -2,7 +2,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    font-size: 17;
+    font-size: 17px;
     margin: 0;
     background-color: #151d30;
     color: #F1F5F9;
@@ -114,4 +114,18 @@ footer {
     text-align: center;
     margin-top: 60px;
     padding: 5px;
+}
+
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0;
+}
+
+#Skills li {
+    background-color: black;
+    padding: 8px 16px;
+    border-radius: 16px;
+    margin-bottom: 12px;
 }
