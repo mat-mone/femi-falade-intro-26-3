@@ -5,11 +5,11 @@ let thisYear = today.getFullYear();
 let footer = document.querySelector("footer");
 let copyright = document.createElement("p");
 
-copyright.innerHTML = `&copy ${thisYear} Femi Falade`;
+copyright.innerHTML = `&copy; ${thisYear} Femi Falade`;
 footer.appendChild(copyright);
 
 // creating list of skills
-let skills = ["Javascript", "HTML", "CSS", "GitHub", "SQL", "Tableau", "Tableau Prep" ,"Salesforce" , "Microsoft Excel", "Jira", "Confluence", "LucidChart", "UAT"];
+let skills = ["JavaScript", "HTML", "CSS", "GitHub", "SQL", "Tableau", "Tableau Prep" ,"Salesforce" , "Microsoft Excel", "Jira", "Confluence", "LucidChart", "UAT"];
 
 let skillsList = document.querySelector("#Skills ul");
 
