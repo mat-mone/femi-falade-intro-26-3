@@ -129,3 +129,102 @@ footer {
     border-radius: 16px;
     margin-bottom: 12px;
 }
+
+/* message form section */
+#Leave-a-Message {
+    margin-top: 24px;
+    padding: 8px;
+}
+
+/* message form fields */
+form[name="leave_message"] {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* inputs and textarea */
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    background-color: #F1F5F9;
+    color: #0f1424;
+    width: 25%;
+    padding: 4px 4px;
+}
+
+form[name="leave_message"] input:focus,
+form[name="leave_message"] textarea:focus {
+    outline: 2px solid lawngreen;
+}
+
+/* submit button */
+form[name="leave_message"] button {
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: darkcyan;
+    color: #F1F5F9;
+    width: 30%;
+    border-radius: 12px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+form[name="leave_message"] button:hover {
+    background-color:darkgoldenrod;
+}
+
+#messages {
+    margin-top: 24px;
+    padding: 8px;
+}
+
+#messages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li {
+   margin-bottom: 8px;
+   font-size: 17px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+#messages li span {
+    font-family: Nunito, sans-serif;
+}
+
+#messages li a {
+    font-family: Nunito, sans-serif;
+    color: blanchedalmond;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* mobile device adjustments */
+@media (max-width: 600px) {
+    /* turn form fields and button to full-width */
+    form[name="leave_message"] input,
+    form[name="leave_message"] textarea,
+    form[name="leave_message"] button {
+        width: 100%;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    #messages {
+        padding: 12px;
+    }
+
+    #messages li {
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 16px;
+    }
+}
