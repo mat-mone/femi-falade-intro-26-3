@@ -188,7 +188,7 @@ form[name="leave_message"] button:hover {
 }
 
 #messages li {
-   margin-bottom: 8px;
+   margin-bottom: 12px;
    font-size: 17px;
    border-radius: 10px;
    display: flex;
@@ -204,6 +204,19 @@ form[name="leave_message"] button:hover {
     font-family: Nunito, sans-serif;
     color: blanchedalmond;
     text-decoration: underline;
+    font-weight: 600;
+}
+
+#messages li button {
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#messages li button:hover {
+    background-color: darkgoldenrod;
+    color: #F1F5F9;
     font-weight: 600;
 }
 
