@@ -19,3 +19,42 @@ for(let i = 0; i < skills.length; i++) {
     skill.textContent = skills[i];
     skillsList.appendChild(skill);
 }
+
+// create variable to select the form by its name attribute
+const messageForm = document.forms["leave_message"];
+
+// handle form submissions: prevent page from reloading every time, also retrieve and log input values from form fields
+messageForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let name = event.target.usersName.value;
+    let email = event.target.usersEmail.value;
+    let message = event.target.usersMessage.value;
+
+    console.log(name, email, message);
+
+    // build the message entry and locate the list it belongs to
+    let messageSection = document.querySelector("#messages");
+    let messageList = messageSection.querySelector("ul");
+
+    let newMessage = document.createElement("li");
+    newMessage.innerHTML = `<a href="mailto:${email}">${name}</a>
+                            <span>${message}</span>`;
+    
+    // create and attach a remove button to delete the message entry
+    let removeButton = document.createElement("button");
+    removeButton.textContent = "remove";
+    removeButton.type = "button";
+
+    removeButton.addEventListener("click", function () {
+        let entry = removeButton.parentNode;
+        entry.remove();
+    });
+    
+    newMessage.appendChild(removeButton);
+
+    messageList.appendChild(newMessage);
+
+    // reset form for next submission
+    messageForm.reset();
+});
