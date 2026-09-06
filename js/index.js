@@ -58,3 +58,20 @@ messageForm.addEventListener("submit", function (event) {
     // reset form for next submission
     messageForm.reset();
 });
+
+// API fetch
+const projectSection = document.getElementById("Projects")
+const projectList = projectSection.querySelector("ul");
+
+
+fetch("https://api.github.com/users/mat-mone/repos")
+    .then(response => response.json())
+    .then(function(repositories) {
+        for(let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");
+            project.textContent = repositories[i].name;
+            projectList.appendChild(project);
+        }
+        console.log(repositories)
+    })
+    .catch(error => console.error("Error:", error))

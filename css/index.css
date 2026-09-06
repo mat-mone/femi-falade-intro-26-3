@@ -240,4 +240,33 @@ form[name="leave_message"] button:hover {
         gap: 8px;
         font-size: 16px;
     }
+
+    #Projects ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #Projects li {
+        font-size: 18px;
+        padding: 10px 14px;
+    }
+}
+
+/* styling project list */
+#Projects ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#Projects li {
+    font-family: Nunito, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: darkcyan;
+    padding: 8px 16px;
+    border-radius: 16px;
 }
