@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Dog Explorer</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="all about dogs">
+        <link href="css/open-api.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav id="portfolio">
+            <a href="index.html">back to portfolio</a>
+        </nav>
+
+        <main>
+            <!--Endpoint 1: breed search-->
+            <section id="breeds-search">
+                <h2>Breeds Search</h2>
+
+                <form id="search-form">
+                    <input id="search">
+                    <button type="submit">Search</button>
+                </form>
+                
+                <div id="breeds-search-result"></div>
+            </section>
+
+            <!--Endpoint 2: breeds-->
+            <section id="breeds">
+                <h2>Random Breeds</h2>
+                <button id="breeds-btn">Show Breeds</button>
+                <div id="breeds-result"></div>
+            </section>
+
+        </main>
+
+        <footer></footer>
+
+        <script src="js/open-api.js"></script>
+
+    </body>
+
+</html>
