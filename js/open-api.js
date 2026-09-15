@@ -10,6 +10,8 @@ let button = document.querySelector("button[type=submit]");
 button.addEventListener("click", function(event) {
     event.preventDefault();
 
+    const container = document.getElementById("breeds-search-result");
+
     let query = search.value;
     let url = base_url + query;
 
@@ -27,7 +29,6 @@ button.addEventListener("click", function(event) {
         return response.json();
     })
     .then(data => {
-        const container = document.getElementById("breeds-search-result");
         container.innerHTML = "";
 
         data.forEach(breed => {
