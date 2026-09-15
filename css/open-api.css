@@ -1,0 +1,175 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    margin: 0;
+    background-color: #f7f9fc;
+    color: #1a1a1a;
+    display:flex;   /* pushes footer down */
+    flex-direction: column;     /* vertical layout */
+}
+
+/* navigation */
+nav {
+    background-color: #e0f2ff;
+    padding: 8px;
+    margin-left: 8px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-family: "Nunito", sans-serif;
+    color: #003366;
+    margin-right: 48px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #0055aa;
+}
+
+/* section */
+section {
+    margin: 48px 0;
+    padding: 0 12px;
+}
+/* section headings */
+h2 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #0066cc;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* search form */
+#search-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+#search-form input {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    width: 20%;
+}
+
+#search-form input:focus {
+    outline: 2px solid #0066cc;
+}
+
+#search-form button {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #0066cc;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+}
+
+#search-form button:hover {
+    background-color: #004c99;
+}
+
+/* breeds search result */
+#breeds-search-result p {
+    background-color: #e8f0ff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #003366;
+    border: 1px solid #c7d9f5;
+}
+
+/* breeds result */
+#breeds-result p {
+    background-color: #e8f0ff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #003366;
+    border: 1px solid #c7d9f5;
+}
+
+/* show breeds button */
+#breeds-btn {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #0066cc;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 16px;
+}
+
+#breeds-btn:hover {
+    background-color: #004c99;
+}
+
+/* footer */
+footer {
+    background-color: #e0f2ff;
+    font-family: Nunito, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 60px;
+    padding: 8px;
+}
+
+/* footer adjustments to ensure it's at the bottom of the page */ 
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;       /* pushes footer to the bottom of the page */
+}
+
+/* mobile friendly adjustments */
+@media (max-width: 600px) {
+    #search-form {
+        flex-direction:column;
+        gap: 16px;
+    }
+
+    #search-form input {
+        width: 100%;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    #search-form button {
+        width: 100%;
+        font-size: 18px;
+        padding:10px
+    }
+
+    #breeds-btn {
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
