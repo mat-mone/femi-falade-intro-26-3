@@ -1,6 +1,3 @@
-const API_KEY = "live_0dQI43d3BOn1mW9LzLuPci5wqXd2EJfLjoTo3wtFWNfl6UguPTgRVHiKe4zrF6oI"
-
-
 // first endpoint function - Breeds Search
 const base_url = "https://api.thedogapi.com/v1/breeds/search?q=";
 
